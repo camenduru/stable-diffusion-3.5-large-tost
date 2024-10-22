@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "Stable Diffusion 3.5",
+      "author": "Stability-AI",
+      "page": "https://stability.ai/news/introducing-stable-diffusion-3-5",
+      "code": "https://github.com/Stability-AI/sd3.5",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/stable-diffusion-3.5-large.ipynb",
+      "tags": [
+        "Text to Image"
+      ],
+      "widget": "readme"
+    },
+    "positive_prompt": {
+      "type": "string",
+      "description": "Prompt",
+      "widget": "textarea"
+    },
+    "negative_prompt": {
+      "type": "string",
+      "description": "Prompt",
+      "widget": "textarea"
+    },
+    "seed": {
+      "type": "integer",
+      "description": "Seed (if 0 random)"
+    },
+    "steps": {
+      "type": "integer",
+      "widget": "select",
+      "description": "Steps",
+      "oneOf": [
+        {
+          "description": "10",
+          "enum": [
+            10
+          ]
+        },
+        {
+          "description": "20",
+          "enum": [
+            20
+          ]
+        },
+        {
+          "description": "30",
+          "enum": [
+            30
+          ]
+        }
+      ],
+      "default": 20
+    },
+    "cfg": {
+      "type": "number",
+      "description": "CFG"
+    },
+    "sampler_name": {
+      "type": "string",
+      "widget": "select",
+      "description": "Sampler Name",
+      "oneOf": [
+        {
+          "description": "euler",
+          "enum": [
+            "euler"
+          ]
+        },
+        {
+          "description": "heun",
+          "enum": [
+            "heun"
+          ]
+        },
+        {
+          "description": "heunpp2",
+          "enum": [
+            "heunpp2"
+          ]
+        },
+        {
+          "description": "dpm_2",
+          "enum": [
+            "dpm_2"
+          ]
+        },
+        {
+          "description": "lms",
+          "enum": [
+            "lms"
+          ]
+        },
+        {
+          "description": "dpmpp_2m",
+          "enum": [
+            "dpmpp_2m"
+          ]
+        },
+        {
+          "description": "ipndm",
+          "enum": [
+            "ipndm"
+          ]
+        },
+        {
+          "description": "deis",
+          "enum": [
+            "deis"
+          ]
+        },
+        {
+          "description": "ddim",
+          "enum": [
+            "ddim"
+          ]
+        },
+        {
+          "description": "uni_pc",
+          "enum": [
+            "uni_pc"
+          ]
+        },
+        {
+          "description": "uni_pc_bh2",
+          "enum": [
+            "uni_pc_bh2"
+          ]
+        }
+      ],
+      "default": "euler"
+    },
+    "scheduler": {
+      "type": "string",
+      "widget": "select",
+      "description": "Scheduler",
+      "oneOf": [
+        {
+          "description": "normal",
+          "enum": [
+            "normal"
+          ]
+        },
+        {
+          "description": "sgm_uniform",
+          "enum": [
+            "sgm_uniform"
+          ]
+        },
+        {
+          "description": "simple",
+          "enum": [
+            "simple"
+          ]
+        },
+        {
+          "description": "ddim_uniform",
+          "enum": [
+            "ddim_uniform"
+          ]
+        }
+      ],
+      "default": "simple"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Width"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Height"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://fakeimg.pl/1024x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "image2": "https://fakeimg.pl/1024x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "image3": "https://fakeimg.pl/1024x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "image4": "https://fakeimg.pl/1024x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "widget": "example"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
