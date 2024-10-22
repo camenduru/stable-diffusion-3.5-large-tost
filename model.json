@@ -2,7 +2,7 @@
     "positive_prompt": "professional raw photo of a cat",
     "negative_prompt": "blurry",
     "seed": 0,
-    "steps": 30,
+    "steps": 20,
     "cfg": 5.5,
     "sampler_name": "euler",
     "scheduler": "sgm_uniform",
