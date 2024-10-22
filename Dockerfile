@@ -20,6 +20,10 @@ RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod 
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large/resolve/main/clip_l.safetensors -d /content/ComfyUI/models/clip -o clip_l.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large/resolve/main/t5xxl_fp16.safetensors -d /content/ComfyUI/models/clip -o t5xxl_fp16.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors -d /content/ComfyUI/models/checkpoints -o sd3.5_large.safetensors
+    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large-turbo/resolve/main/clip_g.safetensors -d /content/ComfyUI/models/clip -o clip_g.safetensors && \
+    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large-turbo/resolve/main/clip_l.safetensors -d /content/ComfyUI/models/clip -o clip_l.safetensors && \
+    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large-turbo/resolve/main/t5xxl_fp16.safetensors -d /content/ComfyUI/models/clip -o t5xxl_fp16.safetensors && \
+    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/stable-diffusion-3.5-large-turbo/resolve/main/sd3.5_large_turbo.safetensors -d /content/ComfyUI/models/checkpoints -o sd3.5_large.safetensors
 
 COPY ./worker_runpod.py /content/ComfyUI/worker_runpod.py
 WORKDIR /content/ComfyUI
