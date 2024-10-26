@@ -8,7 +8,7 @@
       "author": "Stability-AI",
       "page": "https://stability.ai/news/introducing-stable-diffusion-3-5",
       "code": "https://github.com/Stability-AI/sd3.5",
-      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/stable-diffusion-3.5-large.ipynb",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/stable-diffusion-3.5-large-turbo.ipynb",
       "tags": [
         "Text to Image"
       ],
