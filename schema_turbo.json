@@ -4,7 +4,7 @@
   "properties": {
     "readme": {
       "type": "string",
-      "title": "Stable Diffusion 3.5",
+      "title": "Stable Diffusion 3.5 Turbo",
       "author": "Stability-AI",
       "page": "https://stability.ai/news/introducing-stable-diffusion-3-5",
       "code": "https://github.com/Stability-AI/sd3.5",
@@ -168,10 +168,10 @@
     },
     "example": {
       "type": "string",
-      "image1": "https://i.ibb.co/xGMW4B1/Comfy-UI-01545.png",
-      "image2": "https://i.ibb.co/k5J9p3Y/Comfy-UI-01529.png",
-      "image3": "https://i.ibb.co/gm08LT4/Comfy-UI-01541.png",
-      "image4": "https://i.ibb.co/qmN8m5y/Comfy-UI-01543.png",
+      "image1": "https://files.catbox.moe/gxwsmg.png",
+      "image2": "https://files.catbox.moe/a39ft0.png",
+      "image3": "https://files.catbox.moe/1meqsl.png",
+      "image4": "https://files.catbox.moe/qxf50f.png",
       "widget": "example"
     }
   },
