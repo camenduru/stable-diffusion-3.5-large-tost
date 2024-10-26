@@ -3,7 +3,7 @@
     "negative_prompt": "blurry",
     "seed": 0,
     "steps": 4,
-    "cfg": 5.5,
+    "cfg": 1.2,
     "sampler_name": "euler",
     "scheduler": "sgm_uniform",
     "width": 1024,
